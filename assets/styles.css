@@ -1,0 +1,313 @@
+/* Estilos generales */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Cabecera */
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #1a1a1a;
+    color: white;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #e74c3c;
+}
+
+.fecha-hora {
+    text-align: right;
+    font-size: 0.9rem;
+}
+
+#fecha::after {
+    content: " | ";
+    margin: 0 0.5rem;
+}
+
+/* Menú de navegación */
+.menu {
+    background-color: #e74c3c;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    flex: 1;
+    text-align: center;
+}
+
+.menu a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #c0392b;
+}
+
+.menu .activo {
+    background-color: #c0392b;
+}
+
+/* Colores para enlaces de navegación */
+.nav-nacional:hover {
+    background-color: #3498db !important;
+}
+.nav-internacional:hover {
+    background-color: #2ecc71 !important;
+}
+.nav-economia:hover {
+    background-color: #f39c12 !important;
+}
+.nav-deportes:hover {
+    background-color: #9b59b6 !important;
+}
+.nav-cultura:hover {
+    background-color: #1abc9c !important;
+}
+
+/* Contenido principal */
+.contenido {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Noticia destacada */
+.destacada {
+    margin-bottom: 2rem;
+}
+
+.noticia-principal {
+    position: relative;
+}
+
+.etiqueta {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.imagen-destacada {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.noticia-principal h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+    color: #1a1a1a;
+}
+
+.resumen {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.meta {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.autor::after {
+    content: " | ";
+    margin: 0 0.5rem;
+}
+
+/* Noticias secundarias */
+.secundarias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.noticia {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.imagen-noticia {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.noticia h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0;
+    color: #1a1a1a;
+}
+
+/* Secciones temáticas */
+.seccion-tematica {
+    margin: 3rem 0;
+    padding: 1rem 0;
+}
+
+.titulo-seccion {
+    text-align: center;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.titulo-seccion span {
+    background-color: white;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.titulo-seccion::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: currentColor;
+    z-index: 0;
+}
+
+.contenedor-noticias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.noticia-seccion {
+    background-color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.noticia-seccion:hover {
+    transform: translateY(-5px);
+}
+
+.imagen-seccion {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.contenido-noticia {
+    padding: 1rem;
+}
+
+.noticia-seccion h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+/* Colores por sección */
+.nacional .titulo-seccion {
+    color: #3498db;
+}
+.nacional .titulo-seccion::after {
+    background-color: #3498db;
+}
+
+.internacional .titulo-seccion {
+    color: #2ecc71;
+}
+.internacional .titulo-seccion::after {
+    background-color: #2ecc71;
+}
+
+.economia .titulo-seccion {
+    color: #f39c12;
+}
+.economia .titulo-seccion::after {
+    background-color: #f39c12;
+}
+
+.deportes .titulo-seccion {
+    color: #9b59b6;
+}
+.deportes .titulo-seccion::after {
+    background-color: #9b59b6;
+}
+
+.cultura .titulo-seccion {
+    color: #1abc9c;
+}
+.cultura .titulo-seccion::after {
+    background-color: #1abc9c;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-footer p {
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+.redes-sociales a {
+    margin-left: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cabecera {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .fecha-hora {
+        margin-top: 0.5rem;
+    }
+    
+    .menu ul {
+        flex-direction: column;
+    }
+    
+    .contenedor-noticias {
+        grid-template-columns: 1fr;
+    }
+}

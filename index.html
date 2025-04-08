@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Hoy - Minimalista</title>
+    <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="logo">Noticias<span>Hoy</span></div>
+        <div class="fecha-hora">
+            <span id="fecha"></span>
+            <span id="hora"></span>
+        </div>
+    </header>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#" class="activo">Inicio</a></li>
+            <li><a href="#nacional" class="nav-nacional">Nacional</a></li>
+            <li><a href="#internacional" class="nav-internacional">Internacional</a></li>
+            <li><a href="#economia" class="nav-economia">Economía</a></li>
+            <li><a href="#deportes" class="nav-deportes">Deportes</a></li>
+            <li><a href="#cultura" class="nav-cultura">Cultura</a></li>
+        </ul>
+    </nav>
+
+    <main class="contenido">
+        <section class="destacada">
+            <article class="noticia-principal">
+                <div class="etiqueta">Última hora</div>
+                <img src="https://enciclopedia.net/wp-content/uploads/2013/10/politica.jpg" alt="Manifestación política" class="imagen-destacada">
+                <h1>Gran manifestación en la capital pide cambios constitucionales</h1>
+                <p class="resumen">Miles de personas se congregaron frente al congreso para exigir reformas políticas. La protesta transcurrió de forma pacífica con una alta participación juvenil.</p>
+                <div class="meta">
+                    <span class="autor">Por Leandro Diaz</span>
+                    <span class="tiempo">Hace 15 minutos</span>
+                </div>
+            </article>
+        </section>
+
+        <section class="secundarias">
+            <article class="noticia">
+                <img src="https://th.bing.com/th/id/R.374a53290084ef0e3db612c1921dd335?rik=bSCfOgXFbik04Q&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Reunión de negocios" class="imagen-noticia">
+                <h2>Empresarios anuncian nuevas inversiones</h2>
+                <p>El sector privado compromete más de $200 millones para proyectos de infraestructura en zonas rurales.</p>
+                <div class="meta">
+                    <span class="tiempo">Hace 1 hora</span>
+                </div>
+            </article>
+
+            <article class="noticia">
+                <img src="https://th.bing.com/th/id/R.73f41cffd133f26ca743d82372d2625f?rik=UCW0mpcvov8gIA&pid=ImgRaw&r=0" alt="Evento tecnológico" class="imagen-noticia">
+                <h2>Feria tecnológica atrae a miles de visitantes</h2>
+                <p>La innovación local se hace presente en el mayor evento de tecnología del año con más de 120 expositores.</p>
+                <div class="meta">
+                    <span class="tiempo">Hace 2 horas</span>
+                </div>
+            </article>
+        </section>
+
+        <!-- Sección Nacional -->
+        <section id="nacional" class="seccion-tematica nacional">
+            <h2 class="titulo-seccion"><span>Nacional</span></h2>
+            <div class="contenedor-noticias">
+                <article class="noticia-seccion">
+                    <img src="https://www.bloomberglinea.com/resizer/6fwhlWQuhv8VnBUM0KEyGG_FhQM=/1440x0/filters:format(jpg):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/bloomberglinea/ZGGQGPUEPBH37KTNBQ46BVE6QY.jpg" alt="Ciudad capital" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Alcalde anuncia nuevo plan de transporte</h3>
+                        <p>El sistema incluirá 50 nuevas unidades eléctricas y cubrirá rutas no atendidas en la periferia.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 3 horas</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="noticia-seccion">
+                    <img src="https://th.bing.com/th/id/R.ea602ffb28fc632103a743f011b96788?rik=bG4KV%2bGu17DRzg&pid=ImgRaw&r=0" alt="Área natural" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Descubren nueva especie en reserva natural</h3>
+                        <p>Científicos locales identificaron un pequeño mamífero endémico en peligro de extinción.</p>
+                        <div class="meta">
+                            <span class="tiempo">Ayer</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Internacional -->
+        <section id="internacional" class="seccion-tematica internacional">
+            <h2 class="titulo-seccion"><span>Internacional</span></h2>
+            <div class="contenedor-noticias">
+                <article class="noticia-seccion">
+                    <img src="https://fotos.perfil.com/2021/07/23/trim/1280/720/0723clima-1208508.jpg" alt="Reunión internacional" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Cumbre climática logra acuerdos parciales</h3>
+                        <p>Los países participantes comprometieron reducir emisiones, pero sin plazos concretos.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 4 horas</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="noticia-seccion">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Paisaje europeo" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>UE anuncia nuevo paquete de ayudas económicas</h3>
+                        <p>Los fondos estarán destinados a países miembros con mayores dificultades post-pandemia.</p>
+                        <div class="meta">
+                            <span class="tiempo">Ayer</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Economía -->
+        <section id="economia" class="seccion-tematica economia">
+            <h2 class="titulo-seccion"><span>Economía</span></h2>
+            <div class="contenedor-noticias">
+                <article class="noticia-seccion">
+                    <img src="https://images.unsplash.com/photo-1553729459-efe14ef6055d?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Gráficos económicos" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Bolsa local alcanza récord histórico</h3>
+                        <p>El índice principal subió un 2.3% impulsado por el sector tecnológico y exportador.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hoy</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="noticia-seccion">
+                    <img src="https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Mercado local" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Inflación muestra primera baja en 8 meses</h3>
+                        <p>El IPC registró una disminución del 0.2% gracias a la estabilización de precios de alimentos.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 1 día</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Deportes -->
+        <section id="deportes" class="seccion-tematica deportes">
+            <h2 class="titulo-seccion"><span>Deportes</span></h2>
+            <div class="contenedor-noticias">
+                <article class="noticia-seccion">
+                    <img src="https://th.bing.com/th/id/R.acdb38dc86fca3d13e773dc8224fdbd4?rik=4c4MZBrSUUwPwA&riu=http%3a%2f%2fimg2.eltipografo.cl%2fmedia%2f2013%2f10%2fChile-vs-Colombia.jpg&ehk=yJKwqc3yLgP%2fPtcikKFOu%2bvC6FQbZIpTwEEQrnzA1mA%3d&risl=&pid=ImgRaw&r=0" alt="Partido de fútbol" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Selección nacional avanza a semifinales</h3>
+                        <p>En un partido emocionante, el equipo venció 2-1 y mantiene vivas las esperanzas del título.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 5 horas</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="noticia-seccion">
+                    <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Ciclista profesional" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Ciclista local gana etapa en vuelta internacional</h3>
+                        <p>Con un impresionante sprint final, logró su primera victoria en el circuito profesional.</p>
+                        <div class="meta">
+                            <span class="tiempo">Ayer</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección Cultura -->
+        <section id="cultura" class="seccion-tematica cultura">
+            <h2 class="titulo-seccion"><span>Cultura</span></h2>
+            <div class="contenedor-noticias">
+                <article class="noticia-seccion">
+                    <img src="https://th.bing.com/th/id/R.70dc0843854cb8d78554abed32eea704?rik=frxcXrVz1ia7Ng&pid=ImgRaw&r=0" alt="Set de filmación" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Película nacional gana premio en festival internacional</h3>
+                        <p>El drama histórico fue reconocido por su fotografía y guión original.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 6 horas</span>
+                        </div>
+                    </div>
+                </article>
+                <article class="noticia-seccion">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-1.2.1&auto=format&fit=crop&w=300&q=80" alt="Libro abierto" class="imagen-seccion">
+                    <div class="contenido-noticia">
+                        <h3>Feria del libro supera expectativas de asistencia</h3>
+                        <p>Más de 50,000 visitantes disfrutaron de presentaciones y actividades culturales.</p>
+                        <div class="meta">
+                            <span class="tiempo">Hace 2 días</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="info-footer">
+            <p>© 2023 Noticias Hoy - Todos los derechos reservados</p>
+            <p>Contacto: info@noticiashoy.com</p>
+        </div>
+        <div class="redes-sociales">
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/124/124010.png" alt="Facebook" style="width:30px;height:30px;"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" style="width:30px;height:30px;"></a>
+            <a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width:30px;height:30px;"></a>
+        </div>
+    </footer>
+
+    <script>
+        // Script básico para mostrar fecha y hora
+        function actualizarFechaHora() {
+            const ahora = new Date();
+            document.getElementById('fecha').textContent = ahora.toLocaleDateString('es-ES', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+            document.getElementById('hora').textContent = ahora.toLocaleTimeString('es-ES');
+        }
+        setInterval(actualizarFechaHora, 1000);
+        actualizarFechaHora();
+    </script>
+</body>
+</html>
